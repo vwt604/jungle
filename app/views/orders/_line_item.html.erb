@@ -1,0 +1,14 @@
+<tr>
+<td>
+  <h4><%= @order.line_items[0].product.name %></h4>
+</td>
+<td>
+  <%= @order.line_items[0].item_price %>
+</td>
+<td>
+  <%= @order.line_items[0].quantity %>
+</td>
+<td>
+  <%= @order.line_items[0].total_price %>
+</td>
+</tr>
