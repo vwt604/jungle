@@ -9,34 +9,18 @@
   </div>
 
   <div class="panel panel-default products">
-
     <table class="table table-bordered">
       <thead>
         <tr>
           <th>Name</th>
           <th>Created at</th>
-          <th>Updated at</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>
-            <%= @categories[0].name %>
-          </td>
-          <td>
-           <%= @categories[0].created_at %>
-          </td>
-          <td>
-            <%= @categories[0].updated_at %>
-          </td>
-        </tr>
+        <%= render @categories %>
       </tbody>
     </table>
-
   </div>
-
-
-
 
 </section>
 
