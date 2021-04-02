@@ -20,7 +20,8 @@ Rails.application.routes.draw do
     resources :categories, only: [:index, :create, :new]
   end
 
-
+  get '/signup' => 'users#new'
+  post '/users' => 'users#create'
 
   # get 'about' => 'about#index'
 
