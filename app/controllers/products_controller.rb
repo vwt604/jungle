@@ -1,4 +1,6 @@
 class ProductsController < ApplicationController
+  
+  before_filter :authorize
 
   def index
     # uses MODEL
