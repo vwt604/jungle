@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
       #Save the user id inside the browser cookie.
       session[:user_id] = user.id
       redirect_to '/'
+    end
   end
 
   def create
