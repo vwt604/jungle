@@ -2,7 +2,7 @@
   Signed in as <%= current_user.first_name %> | <%= link_to "Logout", '/logout' %>
 <% else %>
   <div class="alert alert-warning" role="alert">
-  Please login to enter the Jungle.
+  Please login or <%= link_to 'register', [:signup] %> to enter the Jungle.
   </div>
 <% end %>
 
