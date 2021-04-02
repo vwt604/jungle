@@ -20,6 +20,8 @@ Rails.application.routes.draw do
     resources :categories, only: [:index, :create, :new]
   end
 
+
+
   # get 'about' => 'about#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
