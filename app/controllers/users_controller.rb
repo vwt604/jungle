@@ -1,12 +1,13 @@
 class UsersController < ApplicationController
   def new
+    @user = User.new
   end
 
   def create
-    @user = Users.new(user_params)
+    @user = User.new(user_params)
 
     if @user.save
-      redirect_to [:admin, :products], notice: 'User created!'
+      redirect_to :products, notice: 'User created!'
     else
       render :new
     end
@@ -22,5 +23,5 @@ class UsersController < ApplicationController
       :password
     )
   end
-  
+
 end
