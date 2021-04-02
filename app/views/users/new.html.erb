@@ -1,25 +1,29 @@
-<h1>Signup!</h1>
+<h1>Sign up!</h1>
+
+
+
 
 <%= form_for :user, url: '/users' do |f| %>
-
-  First Name: <%= f.text_field :first_name %>
-  Last Name: <%= f.text_field :last_name %>
-  Email: <%= f.text_field :email %>
-  Password: <%= f.password_field :password %>
-  Password Confirmation: <%= f.password_field :password_confirmation %>
-  <%= f.submit "Submit" %>
-
-<% end %>
-
-<form>
   <div class="form-row">
     <div class="col-md-4 mb-3">
       <label for="validationServer01">First name</label>
-      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" required>
+      <%= f.text_field :first_name %>
     </div>
     <div class="col-md-4 mb-3">
       <label for="validationServer02">Last name</label>
-      <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" required>
+      <%= f.text_field :last_name %>
     </div>
-  <button class="btn btn-primary" type="submit">Submit form</button>
-</form>
+    <div class="col-md-4 mb-3">
+      <label for="validationServer03">Email</label>
+      <%= f.text_field :email %>
+    </div>
+    <div class="col-md-4 mb-3">
+    <label for="validationServer04">Password</label>
+    <%= f.password_field :password %>
+  </div>
+  <div class="col-md-4 mb-3">
+    <label for="validationServer05">Confirm Password</label>
+    <%= f.text_field :last_name %>
+  </div>
+  <%= f.submit "Submit" %>
+<% end %>
