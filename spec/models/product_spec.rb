@@ -9,5 +9,12 @@ RSpec.describe Product, type: :model do
       expect(product).to be_valid
     end
 
+    it 'should be invalid if name is missing' do
+      category = Category.new()
+      category.save!
+      product = Product.new(price: 10, quantity: 10, category_id: category.id)
+      expect(product).to_not be_valid
+    end
+
   end
 end
