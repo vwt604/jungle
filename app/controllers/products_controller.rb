@@ -6,6 +6,8 @@ class ProductsController < ApplicationController
     # uses MODEL
     @products = Product.all.order(created_at: :desc)
     # render: :index (implicit)
+
+
   end
 
   def show
