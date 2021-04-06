@@ -12,4 +12,6 @@ RSpec.describe User, type: :model do
       expect(user).to_not be_valid
       expect(product.errors[:name]).to(include("can't be blank"))
     end
+  end  
+
 end
