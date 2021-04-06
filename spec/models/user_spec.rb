@@ -44,4 +44,13 @@ RSpec.describe User, type: :model do
     end  
 
   end
+
+  describe '.authenticate_with_credentials' do
+    it 'should authenticate user credentials' do
+      user = User.create(email: 'joe@doe.com', first_name: 'Joe', last_name: 'Doe', password: 'password', password_confirmation: 'password')
+      user.save
+      authentication = User.authenticate_with_credentials('joe@doe.com', 'password')
+      expect(authentication).to eq(user)
+    end
+  end
 end
