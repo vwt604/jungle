@@ -1,10 +1,8 @@
-<% if current_user %>
-  Signed in as <%= current_user.first_name %> | <%= link_to "Logout", '/logout' %>
-<% else %>
-  <div class="alert alert-warning" role="alert">
-  Please login or <%= link_to 'register', [:signup] %> to enter the Jungle.
-  </div>
-<% end %>
+<div class="alert alert-secondary text-right" role="alert">
+  <% if current_user %>
+    Signed in as <%= current_user.first_name %> | <%= link_to "Logout", '/logout' %>
+  <% end %>
+</div>
 
 <h1>Login</h1>
 
