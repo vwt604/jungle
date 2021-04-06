@@ -6,9 +6,10 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      redirect_to :products, notice: 'User created!'
+      session[:user_id] = user.id
+      redirect_to '/', notice: 'User created!'
     else
-      render :new
+      redirect_to '/signup'
     end
   end
 
