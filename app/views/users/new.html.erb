@@ -1,14 +1,23 @@
 <h1>Sign Up</h1>
 
-<%= form_for :user, url: '/users' do |f| %>
+<%= form_for :user, url: '/users' do |form| %>
+
+  <% if @user.errors.any? %>
+    <div class="alert alert-danger">
+      <strong>The following errors prevented saving:</strong>
+      <ul>
+        <% @user.errors.full_messages.each do |error| %>
+          <li><%= error %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
   
-
-
-  First Name: <%= f.text_field :first_name %><br>
-  Last Name: <%= f.text_field :last_name %><br>
-  Email: <%= f.text_field :email %><br>
-  Password: <%= f.password_field :password %><br>
-  Password Confirmation: <%= f.password_field :password_confirmation %><br>
-  <%= f.submit "Submit" %>
+  First Name: <%= form.text_field :first_name %><br>
+  Last Name: <%= form.text_field :last_name %><br>
+  Email: <%= form.text_field :email %><br>
+  Password: <%= form.password_field :password %><br>
+  Password Confirmation: <%= form.password_field :password_confirmation %><br>
+  <%= form.submit "Submit" %>
 
 <% end %>
