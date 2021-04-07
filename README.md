@@ -20,6 +20,21 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 7. Put Stripe (test) keys into appropriate .env vars
 8. Run `bin/rails s -b 0.0.0.0` to start the server
 
+## Final Product
+
+- Home page:
+![Screenshot of Homepage](https://github.com/vwt604/jungle-rails/blob/master/app/assets/images/home-page.png)
+
+- Cart Checkout:
+![Screenshot of Stripe Payment at Checkout](https://github.com/vwt604/jungle-rails/blob/master/app/assets/images/cart-checkout.png)
+
+- Admin Product Page:
+![Screenshot of Admin Product Page](https://github.com/vwt604/jungle-rails/blob/master/app/assets/images/admin-products.png)
+
+- Form Validation:
+![Screenshot of Product Form Validation Errors](https://github.com/vwt604/jungle-rails/blob/master/app/assets/images/form-errors.png)
+
+
 ## Stripe Testing
 
 Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
