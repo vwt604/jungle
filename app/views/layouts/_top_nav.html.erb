@@ -27,13 +27,6 @@
           <li>
             <%= link_to 'About', :about_index %>
           </li>
-          <li>
-            <% if session[:user_id]%>
-            <%= link_to 'Logout', controller: "sessions", action: "destroy" %>
-            <% else %>
-            <%= link_to 'Login', :login %>
-            <% end %>
-          </li>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -53,6 +46,16 @@
           <%= link_to cart_path do %>
             <%= fa_icon "shopping-cart" %> My Cart (<%= cart.size %>)
           <% end %>
+        </li>
+        <li>
+        <% if session[:user_id]%>
+        <%= link_to 'Logout', controller: "sessions", action: "destroy" %>
+          <% else %>
+          <%= link_to 'Login', :login %>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to 'Register', :signup %>
         </li>
       </ul>
     </div>
