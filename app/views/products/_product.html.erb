@@ -21,13 +21,9 @@
     <%= humanized_money_with_symbol product.price %>
   </aside>
   
-  <% if product.quantity < 1 %>
+  <% if product.sold_out? %> 
     <aside class="badge">
     Sold Out!
     </aside>
   <% end %>
 </article>
-
-
-
-<!––  TODO Move sold out! to boolean helper. Sold_out? ––>
