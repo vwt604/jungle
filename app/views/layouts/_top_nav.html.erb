@@ -49,7 +49,7 @@
         </li>
         <li>
         <% if session[:user_id]%>
-        <%= link_to 'Logout', controller: "sessions", action: "destroy" %>
+          <%= link_to 'Logout', controller: "/sessions", action: "destroy" %>
           <% else %>
           <%= link_to 'Login', :login %>
           <% end %>
