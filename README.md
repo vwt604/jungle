@@ -1,6 +1,6 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 with Stripe integtration.
+A mini e-commerce application built with Rails 4.2 with Stripe integration.
 
 ## Additional Steps for Apple M1 Machines
 
