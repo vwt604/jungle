@@ -4,16 +4,16 @@ A mini e-commerce application built with Rails 4.2 with Stripe integration.
 
 ## Final Product
 
-- Home page:
+Home page:
 ![Screenshot of Homepage](https://github.com/vwt604/jungle-rails/blob/master/app/assets/images/home-page.png)
 
-- Cart Checkout:
+Cart Checkout:
 ![Screenshot of Stripe Payment at Checkout](https://github.com/vwt604/jungle-rails/blob/master/app/assets/images/cart-checkout.png)
 
-- Admin Product Page:
+Admin Product Page:
 ![Screenshot of Admin Product Page](https://github.com/vwt604/jungle-rails/blob/master/app/assets/images/admin-products.png)
 
-- Form Validation:
+Form Validation:
 ![Screenshot of Product Form Validation Errors](https://github.com/vwt604/jungle-rails/blob/master/app/assets/images/form-errors.png)
 
 ## Setup
